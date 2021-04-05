@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  color: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+.over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(assets/overlay.png);
+}
+
+
+
+.date {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+.time {
+  font-size: 8rem;
+}
+
+h1 {
+  margin-bottom: 0.7rem;
+}
+
+.main-info {
+  margin-top: 5px;
+  display: flex;
+}
+
+.temperature {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.weather-icon {
+  font-size: 2rem;
+  margin: auto 20px;
+  display: inline-block;
+}
+
+.text-info {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.additional-info {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+
+}
+
+.city {
+  font-size: 2rem;
+}
+
+.name {
+  display: inline-block;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.focus {
+  margin-bottom: 3.5rem;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.quote {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+
+.quote figcaption {
+  text-align: right;
+}
+
+.date {
+  font-size: 2rem;
+}
+
+.time {
+  font-size: 4rem;
+}
+
+.city,
+.temperature {
+  font-size: 1.8rem;
+}
+
+.text-info,
+.additional-info {
+  font-size: 0.8rem;
+}
+
+.quote {
+  font-size: 1rem;
+}
+
+.btn1 {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: url('assets/images/two-thin-arrows-forming-a-circle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(1);
+  margin: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: url('assets/images/two-thin-arrows-forming-a-circle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(1);
+  margin: 5px;
+  /* padding-bottom: 5rem; */
+  margin-bottom: 10rem;
+}
+
+.btn1:hover,
+.btn:hover {
+  transform: scale(1.06)
+}
+
+.btn1:active,
+.btn1:focus,
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+
+.btn1:active,
+.btn:active {
+  transform: scale(1.06)
+}
+
+
+@media (max-width: 880px) {
+  .date {
+    font-size: 1.3rem;
+  }
+
+  .time {
+    font-size: 4rem;
+  }
+
+  .city,
+  .temperature {
+    font-size: 1.3rem;
+  }
+
+  .text-info,
+  .additional-info {
+    font-size: 0.8rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .quote {
+    padding: 0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1rem;
+  }
+
+  .focus {
+    margin-bottom: 3.5rem;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+}
